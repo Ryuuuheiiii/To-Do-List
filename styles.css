@@ -1,0 +1,122 @@
+*{
+    inset: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #cacaca;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+  
+    background: #fff;
+    padding: 50px 30px ;
+    width: clamp(50%, 350px, 800px);
+    border-radius: 10px;
+}
+
+.container h1{
+  text-align: center;  
+  color: seagreen;
+  font-weight: 500;
+}
+.container footer{
+  display: flex;
+  justify-content: space-around;
+  line-height: 15px;
+  color: #333;
+}
+
+.container p sup{
+  color: red;
+}
+.input{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ gap: 1rem;
+ 
+}
+
+.input input[type="text"]{
+ flex-grow: 1;
+}
+.input input[type="text"], .input button{
+  border: 2px solid #cacaca;
+  height: 50px;
+  padding: 0 32px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+
+}
+
+.input button:hover{
+  background: green;
+}
+
+
+ul {
+  list-style: none;
+  padding: 5px;
+  transition: all 0.5s ease;
+
+  }
+
+/* Style the list items */
+ul .uncheck {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px ;
+    background: #f7efef ;
+    font-size: 18px;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+    margin-block: 2px;
+    border-bottom: 1px solid seagreen;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    list-style-type: none; /* Remove bullets */
+   
+  }
+
+
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: seagreen;
+  }
+  ul li.checked {
+    opacity: 0.8;
+    color: #000;
+    text-decoration: line-through;
+    font-style: italic;
+    background: #cacaca;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
